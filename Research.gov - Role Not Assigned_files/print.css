@@ -1,0 +1,91 @@
+body {
+	width: 100% !important;
+	margin: 0 !important;
+	float: none !important;
+	height:auto !important;
+	overflow: visible !important;
+}
+
+a:link, a:visited
+{ color: #CCCCCC; }
+
+#masthead, #footer, #sideBar, .skipToContent, #portletFeaturedBanner, .rightRail, .controlContainer, .theme-header {
+	display: none;
+}
+.content {
+	width: 100% !important;
+	margin: 0 !important;
+	float: none !important;
+	border: 0 !important;
+	overflow: visible !important;
+}
+
+#pageFrame {
+	border: 0;
+}
+
+/* Remove floated element in Firefox 3 - they get cut off */
+@-moz-document url-prefix()  { float: none !important; }
+
+img {
+	border: 0;
+}
+
+input, select{
+	border: 1px solid #ccc;
+}
+
+.portlet p {
+	margin: 0 0 10px 0;
+}
+/* Hide button and font size controls */
+.buttonsContainer {
+display: none;
+}
+
+.controlContainer {
+display: none;
+}
+
+/* Hide modal thickbox popups */
+.modalWarning {
+display:none;
+}
+
+/* Hide Flash elements */
+#flashCarousel, #flashMapContent {
+	display: none;
+}
+
+#researchAreaScroll {
+	height: 480px !important;
+	overflow: hidden !important;
+}
+
+div.scrollable {
+	height: 480px !important;
+	overflow: hidden !important;
+}
+div.scrollable div.items { /* this cannot be too large */
+	height: 480px/*\9*/;
+	position: absolute;
+	overflow: hidden;
+}
+/* Allow some floats to preserve GAAPS formatting in FF */
+.informationContentRow {
+	overflow: hidden;
+	margin: 0 0 5px 0;
+	padding: 4px 0 4px 0;
+	clear: both;
+	width: 100%;
+}
+
+.informationContentLabel {
+	float: left !important;
+	width: 45% !important;
+}
+
+.informationContentDefinition {
+	float: left !important;
+	width: 45% !important;
+}

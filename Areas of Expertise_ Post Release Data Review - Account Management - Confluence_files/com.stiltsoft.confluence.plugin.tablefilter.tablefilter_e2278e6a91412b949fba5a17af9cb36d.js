@@ -1,0 +1,6 @@
+WRMCB=function(e){var c=console;if(c&&c.log&&c.error){c.log('Error running batched script.');c.error(e);}}
+;
+try {
+/* module-key = 'com.stiltsoft.confluence.plugin.tablefilter.tablefilter:e2278e6a91412b949fba5a17af9cb36d', location = 'build/3406.js' */
+"use strict";(self.webpackChunkcom_stiltsoft_confluence_plugin_tablefilter=self.webpackChunkcom_stiltsoft_confluence_plugin_tablefilter||[]).push([[3406],{790:function(t,n,r){var e=r(64690).PROPER,u=r(42675),f=r(74912);t.exports=function(t){return u((function(){return!!f[t]()||"​᠎"!=="​᠎"[t]()||e&&f[t].name!==t}))}},65150:function(t,n,r){var e=r(2484),u=r(64834),f=r(17267),i=r(74912),o=e("".replace),c=RegExp("^["+i+"]+"),s=RegExp("(^|[^"+i+"])["+i+"]+$"),l=function(t){return function(n){var r=f(u(n));return 1&t&&(r=o(r,c,"")),2&t&&(r=o(r,s,"$1")),r}};t.exports={start:l(1),end:l(2),trim:l(3)}},73406:function(t,n,r){var e=r(88810),u=r(65150).trim;e({target:"String",proto:!0,forced:r(790)("trim")},{trim:function(){return u(this)}})},74912:function(t){t.exports="\t\n\v\f\r                　\u2028\u2029\ufeff"}}]);
+}catch(e){WRMCB(e)};

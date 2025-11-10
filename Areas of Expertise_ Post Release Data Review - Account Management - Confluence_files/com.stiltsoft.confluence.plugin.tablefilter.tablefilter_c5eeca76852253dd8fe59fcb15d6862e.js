@@ -1,0 +1,6 @@
+WRMCB=function(e){var c=console;if(c&&c.log&&c.error){c.log('Error running batched script.');c.error(e);}}
+;
+try {
+/* module-key = 'com.stiltsoft.confluence.plugin.tablefilter.tablefilter:c5eeca76852253dd8fe59fcb15d6862e', location = 'build/6303.js' */
+"use strict";(self.webpackChunkcom_stiltsoft_confluence_plugin_tablefilter=self.webpackChunkcom_stiltsoft_confluence_plugin_tablefilter||[]).push([[6303],{53444:function(t,e,n){n.r(e),e.default=function t(e,n,l,i,s){const r=[];e.find(n).each((function(){r.push($(this).attr("id"))}));const c=e.filter(".table-excerpt").length>0,u=r.length||c;return u?(e.bind(l,(function(t,e){if(r.includes(e.id)||c)return i(t),s||$(t.target).closest(".table-excerpt, .original-table, .tj-source, .tablefilter-table-wrapper").hasClass("table-excerpt")})),e.one("tf-added",(t=>-1===r.indexOf(t)?r.push(t):null))):e.one("tf-added tf-inserted",(()=>t(e,n,l,i))),u}},80356:function(t,e,n){function l(t){const e=t?.target;return e?.classList?.contains("sp-highlight-term")||$(e).parents(".sp-highlight-term").length}n.r(e),n.d(e,{default:function(){return l}})}}]);
+}catch(e){WRMCB(e)};

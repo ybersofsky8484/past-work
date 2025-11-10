@@ -1,0 +1,6 @@
+WRMCB=function(e){var c=console;if(c&&c.log&&c.error){c.log('Error running batched script.');c.error(e);}}
+;
+try {
+/* module-key = 'com.stiltsoft.confluence.plugin.tablefilter.tablefilter:cb750516ce75945986b9e3115e22a3ba', location = 'build/7809.js' */
+"use strict";(self.webpackChunkcom_stiltsoft_confluence_plugin_tablefilter=self.webpackChunkcom_stiltsoft_confluence_plugin_tablefilter||[]).push([[7809],{37567:function(t,n,e){var r=e(88810),c=e(2484),i=e(83259),o=e(64834),u=e(17267),s=e(78656),f=c("".indexOf);r({target:"String",proto:!0,forced:!s("includes")},{includes:function(t){return!!~f(u(o(this)),u(i(t)),arguments.length>1?arguments[1]:void 0)}})},64707:function(t,n,e){var r=e(88810),c=e(56749).includes,i=e(42675),o=e(62153);r({target:"Array",proto:!0,forced:i((function(){return!Array(1).includes()}))},{includes:function(t){return c(this,t,arguments.length>1?arguments[1]:void 0)}}),o("includes")},78656:function(t,n,e){var r=e(54175)("match");t.exports=function(t){var n=/./;try{"/./"[t](n)}catch(e){try{return n[r]=!1,"/./"[t](n)}catch(t){}}return!1}},83259:function(t,n,e){var r=e(34584),c=TypeError;t.exports=function(t){if(r(t))throw new c("The method doesn't accept regular expressions");return t}}}]);
+}catch(e){WRMCB(e)};

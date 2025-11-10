@@ -1,0 +1,6 @@
+WRMCB=function(e){var c=console;if(c&&c.log&&c.error){c.log('Error running batched script.');c.error(e);}}
+;
+try {
+/* module-key = 'com.stiltsoft.confluence.plugin.tablefilter.tablefilter:8879508db09f129bb39055bcbe3ea018', location = 'build/5433.js' */
+"use strict";(self.webpackChunkcom_stiltsoft_confluence_plugin_tablefilter=self.webpackChunkcom_stiltsoft_confluence_plugin_tablefilter||[]).push([[5433],{35433:function(e,t,n){var r=n(92128),c=n(2484),f=n(93625),i=n(42675),o=n(64700),l=n(9073),u=n(7769),a=n(68649),s=n(20051),b=Object.assign,p=Object.defineProperty,g=c([].concat);e.exports=!b||i((function(){if(r&&1!==b({b:1},b(p({},"a",{enumerable:!0,get:function(){p(this,"b",{value:3,enumerable:!1})}}),{b:2})).b)return!0;var e={},t={},n=Symbol("assign detection"),c="abcdefghijklmnopqrst";return e[n]=7,c.split("").forEach((function(e){t[e]=e})),7!==b({},e)[n]||o(b({},t)).join("")!==c}))?function(e,t){for(var n=a(e),c=arguments.length,i=1,b=l.f,p=u.f;c>i;)for(var h,_=s(arguments[i++]),m=b?g(o(_),b(_)):o(_),k=m.length,v=0;k>v;)h=m[v++],r&&!f(p,_,h)||(n[h]=_[h]);return n}:b}}]);
+}catch(e){WRMCB(e)};
