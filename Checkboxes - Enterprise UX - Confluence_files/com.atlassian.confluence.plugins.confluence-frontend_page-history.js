@@ -1,0 +1,9 @@
+WRMCB=function(e){var c=console;if(c&&c.log&&c.error){c.log('Error running batched script.');c.error(e);}}
+;
+try {
+/* module-key = 'com.atlassian.confluence.plugins.confluence-frontend:page-history', location = '/includes/js/page-history.js' */
+define("confluence/page-history",["jquery","ajs"],function(a,d){return function(){a("#page-history-container").click(function(e){if(!a(e.target).is("a")&&!a(e.target).hasClass("userLogo")&&!a(e.target).hasClass("additional-contributors-button")){var b=a(e.target).closest("tr"),c=b.find("input")[0];c&&(e.target!==c&&(c.checked=!c.checked),c.checked?2>=a("input:checked",this).length?b.addClass("page-history-item-selected"):c.checked=!1:b.removeClass("page-history-item-selected"))}});a(".remove-historical-version-trigger").click(function(){var e=
+a(this);var b=new d.Dialog({width:400,height:236,id:"remove-historical-version-dialog",closeOnOutsideClick:!1,keypressListener:function(c){b&&27===c.keyCode&&b.remove()}});b.addHeader("Confirm Deletion");b.addPanel("SinglePanel","\x3cdiv\x3e"+d.format("Are you sure you want to delete version {0} of {1}?",e.data("version"),d.escapeHtml(d.Meta.get("page-title")))+"\x3c/div\x3e");b.addButton("Delete",function(){a(this).prop("disabled",
+!0);a.ajax({type:"GET",url:d.contextPath()+"/rest/api/accessmode",contentType:"application/json",dataType:"json"}).done(function(c){"READ_WRITE"===c?(a("#remove-historical-version-pageid").val(e.data("pageid")),a("#remove-historical-version-form").submit()):(c=d.messages.error({body:"This site is read-only. You can\u0027t make changes right now.",closeable:!1}),b.getCurrentPanel().html(c))})});b.addCancel("Close",function(){b.remove();return!1});b.gotoPanel(0);b.show();return!1})}});
+require("confluence/module-exporter").safeRequire("confluence/page-history",function(a){require("ajs").toInit(a)});
+}catch(e){WRMCB(e)};
