@@ -1,0 +1,6 @@
+WRMCB=function(e){var c=console;if(c&&c.log&&c.error){c.log('Error running batched script.');c.error(e);}}
+;
+try {
+/* module-key = 'com.stiltsoft.confluence.plugin.tablefilter.tablefilter:e994bac8095b4ab9a88bb1199bc981a2', location = 'build/4510.js' */
+"use strict";(self.webpackChunkcom_stiltsoft_confluence_plugin_tablefilter=self.webpackChunkcom_stiltsoft_confluence_plugin_tablefilter||[]).push([[4510],{44510:function(n,e,t){t.r(e),t.d(e,{AVAILABLE_FONTS:function(){return s},AVAILABLE_TEXT_ROTATION:function(){return A},CLASS_SOURCE_TABLE_CONTAINER:function(){return o},DATA_FILE_EXT:function(){return r},OPTION_HIDE_ALL:function(){return f},OPTION_HIDE_TABLES:function(){return c},OPTION_SHOW_SOURCE:function(){return E},OPTION_SHOW_SOURCE_DEFAULT:function(){return i},RENDER_FILE_EXT:function(){return u},SPREADSHEET_CREATED_EVENT:function(){return T},SUPPORTED_LANGS:function(){return _}});const r=".tfss",u=".render",_=["en","es","de","fr","zh","zh_tw"],E="true",c="false",f="hide-all",i=f,o="ss-source",T="spreadsheet-created",s=["Times New Roman","Arial","Tahoma","Verdana"],A=["0","45","135",null,"90","180"]}}]);
+}catch(e){WRMCB(e)};
